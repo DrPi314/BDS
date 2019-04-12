@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
     EditText eOdometer;
     EditText eWaitTime;
     EditText eNumberStops;
-    private static final String FILE_PATH = "E:\\OneDrive\\AppAccess\\Pagels Books 2019.xlsx";
+    private static final String FILE_PATH = "E:\\OneDrive\\AppAccess\\BDS.xlsx";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
             wb = Workbook.getWorkbook(new File(FILE_PATH));
             Sheet s = wb.getSheet(0);
 
-            for (int row=1; row < s.getRows(); row++) //worried about this loop setup, maybe getrows+1?
+            for (row=1; row < s.getRows(); row++) //worried about this loop setup, maybe getrows+1?
                 if (s.getCell(2, row) == null) {
 
                 } else {
