@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
             for (row=1; row < s.getRows(); row++) //worried about this loop setup, maybe getrows+1?
                 if (s.getCell(2, row) == null) {
+                    //input time and mile to their own cell on a new row
 
                 } else {
                     continue;
